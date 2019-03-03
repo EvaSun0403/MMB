@@ -1,0 +1,202 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.productlist_title{
+    height: 76/@base;
+    line-height: 76/@base;
+    background-color: #fbfbfb;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 0 15/@base;
+    font-size: 26/@base;
+    a{
+        font-size: 26/@base;
+        color: #060000;
+    }
+    button{
+        width: 124/@base;
+        height: 56/@base;
+        line-height: 56/@base;
+        font-size: 26/@base;
+        color: #060000;
+        margin-top: 10/@base;
+        background-color: #e6e6e6;
+        border-radius: 10/@base;
+    }
+}
+
+
+.productlist_content{
+    .title{
+        padding: 40/@base;
+        margin-bottom: 20/@base;
+        position: relative;
+        h3{
+            text-align: center;
+            font-size: 34/@base;
+            color:#000734;
+            line-height: 48/@base;
+        }
+        img{
+            width: 380/@base;
+            height: 260/@base;
+            border: 1px solid #000;
+            margin: 50/@base auto;
+        }
+        .box{
+            width: 80/@base;
+            height: 80/@base;
+            line-height: 80/@base;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #95d800;
+            font-size: 28/@base;
+            color: #fbfcf8;
+            position: absolute;
+            bottom: 0;
+            right: 60/@base;
+        }
+    }
+
+    .center{
+        height: 68/@base;
+        background-color: #efefef;
+        // margin-bottom: 34/@base;
+        a{
+            width: 33.3%;
+            height: 68/@base;
+            font-size: 28/@base;
+            line-height: 68/@base;
+            color: #ffffe6;
+            display: block;
+            float: left;
+            text-align: center;
+            position: relative;
+            border-top: 2/@base solid #bf4104;
+            border-bottom: 2/@base solid #bf4104;
+            &:first-child{
+                background-color: #ff9d1e;
+            }
+            &:nth-child(2){
+                border-left: 2/@base solid #bf4104;
+                border-right: 2/@base solid #bf4104;
+                background-color: #ffca39;
+            }
+            &:last-child{
+                background-color: #ffc936;
+            }
+        }
+    }
+
+    .mall{
+        font-size: 30/@base;
+        position: relative;
+        height: 88/@base;
+        line-height: 80/@base;
+        padding-left: 60/@base;
+        border-bottom: 1px solid #b2b2b2;
+        i{
+            position: absolute;
+            top: 25/@base;
+            left: 13/@base;
+            width: 32/@base;
+            height: 32/@base;
+            background: url('../images/slogo.png') no-repeat center;
+            background-size: cover;
+        }
+        .name{
+            color: #000006;
+        }
+        .price{
+            color: #c9062e;
+            float: right;
+        }
+        button{
+            float: right;
+            width: 112/@base;
+            height: 50/@base;
+            line-height: 49/@base;
+            background-color: #ff5500;
+            color: #ffffff;
+            border: none;
+            border-radius: 10/@base;
+            margin-right: 5/@base;
+            margin-left: 35/@base;
+            margin-top: 16/@base;
+        }
+    }
+
+    .bottom{
+        padding: 22/@base 40/@base 0;
+        height: 120/@base;
+        border-bottom: 6/@base solid #676767;
+        p{
+            color: #686467;
+            font-size: 22/@base;
+            line-height: 35/@base;
+        }
+    }
+}
+
+.evaluate{
+    .title{
+        height: 68/@base;
+        background-color: #dbdbdb;
+        h3{
+            line-height: 68/@base;
+            font-size:26/@base; 
+            text-align: center;
+            color:#141439;
+        }
+    }
+
+    .content{
+            .top{
+                height: 118/@base;
+                padding: 30/@base 20/@base 0;
+                .left{
+                    font-size: 24/@base;
+                    color:#4e4a65;
+                }
+                .right p{
+                    font-size: 20/@base;
+                    color: #463d51;
+                    text-align: right;
+                    line-height: 33/@base;
+                }
+            }
+            .bottom{
+                padding: 0 20/@base;
+                border-bottom: 1px solid #010714;
+                p{
+                    font-size: 22/@base;
+                    line-height: 42/@base;
+                    color: #2d2d2d;
+                }
+            }
+    }
+}
+
+
+.recommend_more{
+    height: 104/@base;
+    padding: 20/@base 20/@base 0 20/@base;
+  
+    a{
+        height: 68/@base;
+        line-height: 68/@base;
+        text-align:center;
+        display: block;
+        border: 1/@base solid #e0e0e0;
+        border-radius: 10/@base;
+        font-size: 26/@base;
+        color: #020202;
+        background-color: #e7e7e7;
+    }
+}

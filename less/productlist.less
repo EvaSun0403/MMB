@@ -1,0 +1,76 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+
+.productlist_title{
+    height: 76/@base;
+    line-height: 76/@base;
+    background-color: #fbfbfb;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 0 15/@base;
+    font-size: 26/@base;
+    a{
+        font-size: 26/@base;
+        color: #060000;
+    }
+    button{
+        width: 124/@base;
+        height: 56/@base;
+        line-height: 56/@base;
+        font-size: 26/@base;
+        color: #060000;
+        margin-top: 10/@base;
+        background-color: #e6e6e6;
+        border-radius: 10/@base;
+    }
+}
+
+.productlist_content{
+    ul li{
+        width: 100%;
+        height: 235/@base;
+        border-bottom: 1px solid #e9e9e9;
+        padding-right: 50/@base;
+        .pic{
+            width: 31%;  //234px
+            height: 235/@base;
+            padding: 40/@base 16/@base;
+            img{
+                width: 186/@base;
+                height: 142/@base;
+            }
+        }
+
+        .info{
+            width: 69%;
+            .title{
+                margin-top: 20/@base;
+                padding-right: 28/@base;
+                height: 156/@base;
+                p{
+                    color: #1e0d04;
+                    font-size: 26/@base;
+                    line-height: 45/@base;
+                }
+                span{
+                    font-size: 30/@base;
+                    color: #ff5612;
+                }
+            }
+            .other{
+                font-size: 22/@base;
+                color: #a8a9a9;
+                padding-right: 16/@base;
+                
+            }
+        }
+    }
+}
+

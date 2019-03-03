@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+<div class="mm_container">
+
+    <div class="mm_header">
+        <img class="fl header_logo" src="./images/header_logo.png" alt="">
+        <a href="#" class="fr">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+    </div>
+
+    <div class="mm_search">
+        <input class="search" type="text" placeholder="请输入你想比价的商品">
+        <button class="searchBtn">搜索</button>
+    </div>
+
+    <div class="productlist_title">
+        <!-- 挖个坑 -->
+    </div>
+
+
+
+    <div class="productlist_content">
+       <!-- 挖个坑 -->
+    </div>
+
+    <!-- 网友评价 evaluate -->
+    <div class="evaluate">
+        <div class="title">
+            <h3>网友评价</h3>
+        </div>
+        <div class="content">
+                <!-- 挖个坑 -->
+        </div>
+    </div>
+   
+    <div class="recommend_more">
+        <a href="#">查看更多评价</a>
+    </div>
+   
+
+    <div class="mm_footer">
+        <div class="footer_top">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><i></i>返回顶部</a>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <a href="#">--掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script type="text/html" id="titleTpl">
+    {{ each result v i }}
+    <a href="index.html">首页</a>><a href="category.html">全部分类</a>><a href="product.html">{{v.productName.split(' ')[0]}}</a>>
+    <button class="fr">筛选</button>
+    {{ /each }}
+</script>
+
+
+<script type="text/html" id="contentTpl">
+    {{ each result v i }}
+    <div class="title">
+        <h3>{{v.productName}}</h3>
+        {{@v.productImg}}
+        <div class="box">收藏</div>
+    </div>
+    <div class="center">
+        <a href="#">比价购买</a>
+        <a href="#">产品参数</a>
+        <a href="#"><i></i>评价(2322)</a>
+    </div>
+    <div class="mall">
+        <i></i>
+        <span class="name">京东商城</span>
+        <button>去购买</button>
+        <span class="price">&yen;1999:00</span>
+    </div>
+    <div class="bottom">
+        <p>*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+    </div>
+    {{ /each }}
+</script>
+
+<script type="text/html" id="evaluateTpl">
+    {{ each result v i }}
+        <div class="top">
+            <div class="left fl">{{v.comName}}</div>
+            <div class="right fr">
+                <p class="time">{{v.comTime}}</p>
+                <p class="mall">{{v.comFrom}}</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="text">{{v.comContent}}</p>
+        </div>
+    
+    {{ /each }}
+</script>
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/Template/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/product.js"></script>
+</body>
+</html>
