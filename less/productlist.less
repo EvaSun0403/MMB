@@ -74,3 +74,63 @@
     }
 }
 
+
+.pagination{
+    height: 93/@base;
+    line-height: 93/@base;
+    padding: 20/@base 40/@base 0;
+    color: #000;
+    font-size: 28/@base;
+    text-align: center;
+    margin-bottom: 50/@base;
+
+    .prev,
+    .next{
+        width: 160/@base;
+        height: 70/@base;
+        line-height: 70/@base;
+        background-color: #e5e5e5;
+        border-radius: 10/@base;
+    }
+    .box {
+        width: 150/@base;
+        height: 70/@base;
+        line-height: 70/@base;
+        border: 1px solid #b4b4b4;
+        margin: 0 auto;
+        position: relative;
+        .check{
+            width: 36/@base;
+            height: 68/@base;
+            line-height: 68/@base;
+            font-size: 30/@base;
+            border-left: 1px solid #b4b4b4;
+            background-color: #b4b4b4;
+            position: absolute;
+            right: 0;
+            z-index: 22;
+        }
+        .num{
+            width: 150/@base;
+            height: 68/@base;
+            padding-right: 36/@base;
+            ul {
+                position: absolute;
+                top: 68/@base;
+                left: -1/@base;
+                &.hide{
+                    display: none;
+                }
+                li{
+                width: 150/@base;
+                height: 68/@base;
+                padding-right: 36/@base;
+                border-bottom: 1px solid #b4b4b4;
+                border-left: 1px solid #b4b4b4;
+                border-right: 1px solid #b4b4b4;
+                }
+            }
+        }
+    }
+}
+

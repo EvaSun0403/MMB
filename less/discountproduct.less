@@ -1,0 +1,183 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.mm_header{
+    h3{
+        font-size: 46/@base;
+        text-align: center;
+        line-height: 95/@base;
+        color: #fffdff;
+    }
+}
+
+.product {
+    .title{
+        // height: 220/@base;
+        padding-left: 20/@base;
+        padding-top: 40/@base;
+        // margin-bottom: 20/@base;
+
+        h4{
+            font-size: 36/@base;
+            color:#575752;
+            line-height: 60/@base;
+        }
+       
+        .pic{
+            font-size: 30/@base;
+            color: #ff5000;
+            line-height: 70/@base;
+
+        }
+        .mall{
+            font-size: 22/@base;
+            color:#a9a6a5;
+        }
+        
+    }
+
+    .sm{
+        width: 250/@base;
+        height:250/@base;
+        margin-right: 20/@base;
+    }
+    .txt{
+        padding-right: 27/@base;
+        padding-left: 20/@base;
+        p{
+            font-size: 30/@base;
+            line-height: 50/@base;
+            color:#6d6e71;
+        }
+    }
+    .lg{
+        width: 450/@base;
+        height: 450/@base;
+        margin: 30/@base auto;
+        display: block;
+    }
+}
+
+
+.address{
+    ul{
+        width: 274/@base;
+        border: 1/@base solid #efefef;
+        padding: 20/@base;
+        margin: 20/@base auto;
+        li{
+            width: 230/@base;
+            height: 40/@base;
+            line-height: 40/@base;
+            border-bottom: 1px dashed #d7d7d7;
+            font-size: 22/@base;
+            padding:0 22/@base;
+
+            span:first-child{
+                color:#1a1817; 
+                 float: left;
+            }
+            span:nth-child(2){
+                color:#f1730c;
+                float: right;
+            }
+        }
+        
+    }
+}
+
+.btn{
+    margin-bottom: 50/@base;
+    a{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 670/@base;
+        height: 60/@base;
+        line-height: 60/@base;
+        font-size: 26/@base;
+        color: #fff;
+        background-color: #ff9000;
+        border-radius: 10/@base;
+
+    }
+}
+
+.wechat{
+    width: 700/@base;
+    height: 268/@base;
+    margin: 0 auto 60/@base;
+}
+
+
+
+.comment{
+    padding: 0 20/@base;
+    line-height: 60/@base;
+    .tit{
+        font-size: 30/@base;
+        line-height: 80/@base;
+    }
+    .reply{
+        position: relative;
+        textarea{
+            width: 700/@base;
+            height: 220/@base;
+            border: 1/@base solid #e4e2df;
+        }
+        input[type='submit']{
+            position: absolute;
+            width: 200/@base;
+            height: 76/@base;
+            bottom: 23/@base;
+            right: 11/@base;
+            font-size: 34/@base;
+            background-color: #ff841d;
+            border: none;
+        }
+    }
+
+    .list{
+        ul li{
+            .userimg{
+                width: 80/@base;
+                height: 80/@base;
+                border-radius: 50%;
+                overflow: hidden;
+                float: left;
+                margin-right: 20/@base;
+                img{
+                    width:  80/@base;
+                    height: 100%;
+                }
+            }
+    
+            .con{
+                width: 85%;
+                float: left;
+                .username{
+                    font-size: 26/@base;
+                    color:#4d91bd;
+                    float: left;
+                }
+                .time{
+                    color: #9296a4;
+                    font-size: 20/@base;
+                    float: right;
+                }
+                .content{
+                    font-size: 28/@base;
+                    line-height: 40/@base;
+                    margin-bottom: 40/@base;
+                }
+            }
+        }
+    }
+    
+}

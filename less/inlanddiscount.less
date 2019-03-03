@@ -1,0 +1,55 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.mm_header{
+    h3{
+        font-size: 46/@base;
+        text-align: center;
+        line-height: 95/@base;
+        color: #fffdff;
+    }
+}
+
+.productlist_content{
+    ul{
+        li{
+            width: 50%;
+            height: 530/@base;
+            float: left;
+            border-bottom: 1/@base solid #ccc;
+            border-right: 1/@base solid #ccc;
+            padding: 30/@base 30/@base 0;
+            &:nth-child(2n){
+                border-right: none;
+            }
+            p{
+                margin: 0;
+            }
+            img{
+                width: 316/@base;
+                height: 290/@base;
+                margin-bottom: 20/@base;
+            }
+            .name{
+                font-size: 24/@base;
+                line-height: 36/@base;
+                color: #250e1e;
+            }
+            .price{
+                font-size: 24/@base;
+                color:#ff4f09;
+                line-height: 55/@base;
+            }
+            .mall{
+                font-size: 22/@base;
+                color:#88858b;
+            }
+        }
+    }
+}

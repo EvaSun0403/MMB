@@ -1,0 +1,63 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.mm_header{
+    h3{
+        font-size: 46/@base;
+        text-align: center;
+        line-height: 95/@base;
+        color: #fffdff;
+    }
+}
+
+
+.moneyctrl_content{
+    ul li{
+        width: 100%;
+        height: 258/@base;
+        // line-height: 258/@base;
+        border-bottom: 1px solid #eaeaea;
+        .pic{
+            width: 31%;  //234px
+            height: 258/@base;
+            padding: 30/@base 16/@base;
+            img{
+                width: 200/@base;
+                height: 204/@base;
+            }
+        }
+
+        .info{
+            width: 69%;
+            .title{
+                font-size: 28/@base;
+                margin-top: 36/@base;
+                padding-right: 28/@base;
+                height: 140/@base ;
+                .name{
+                    color: #1e0d04;
+                    line-height: 42/@base;
+                }
+                span{
+                    color: #ff5612;
+                }
+            }
+            .other{
+                font-size: 24/@base;
+                color: #aeb2b3;
+                padding-right: 16/@base;
+                .comment {
+                    .res {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

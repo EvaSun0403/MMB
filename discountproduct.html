@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./css/discountproduct.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+<div class="mm_container">
+
+    <div class="mm_header">
+        <a href="#" class="fr">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+        <h3>国内折扣</h3>
+    </div>
+
+    <div class="mm_content">
+        <!-- 挖个巨坑 -->
+    </div>
+    
+
+    
+
+   
+
+    <div class="mm_footer">
+        <div class="footer_top">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><i></i>返回顶部</a>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <a href="#">--掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+</div>
+<!-- <img class="lg" src="./images/product.jpg" alt=""> -->
+<script type="text/html" id="productTpl">
+    {{ each result v i }}
+    <div class="product">
+        <div class="title">
+            <h4>{{v.productName}}</h4>
+            <p class="pic">{{v.productPrice}}</p>
+            <p class="mall">{{v.productPrice}} {{v.productTime}} {{v.productTips}}</p>
+        </div>
+        <div class="content">
+            <div class="sm fr ">
+                {{@v.productImg}}
+            </div>
+            <div class="txt">
+                <p>{{v.productInfo}}</p>
+            </div>
+        </div>
+        <div class="lg">
+            {{@v.productImg}}
+        </div>
+    </div>
+
+    <div class="address">
+        <ul>
+            <li>
+                <span>北京</span>
+                <span>有货</span>
+            </li>
+            <li>
+                <span>上海</span>
+                <span>有货</span>
+            </li>
+            <li>
+                <span>广州</span>
+                <span>有货</span>
+            </li>
+            <li>
+                <span>深圳</span>
+                <span>有货</span>
+            </li>
+            <li>
+                <span>南京</span>
+                <span>有货</span>
+            </li>
+            <li>
+                <span>成都</span>
+                <span>有货</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="btn">
+        <a href="#">前往购买</a>
+    </div>
+    
+    <div class="wechat">
+        <img src="./images/mmbweixin2.png" alt="">
+    </div>
+    <div class="comment">
+        {{@v.productComment}}
+    </div>
+
+    {{ /each }}
+</script>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/Template/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/discountproduct.js"></script>
+</body>
+</html>

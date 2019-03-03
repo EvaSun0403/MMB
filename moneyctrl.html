@@ -7,35 +7,30 @@
     <title>慢慢买</title>
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./lib/mui/css/mui.css">
-    <link rel="stylesheet" href="./css/productlist.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
     <script src="./lib/flexible/flexible.js"></script>
 </head>
 <body>
 <div class="mm_container">
 
     <div class="mm_header">
-        <img class="fl header_logo" src="./images/header_logo.png" alt="">
+        <!-- <img class="fl header_logo" src="./images/header_logo.png" alt=""> -->
         <a href="#" class="fr">
             <img class="header_app" src="./images/header_app.png" alt="">
         </a>
+        <h3>省钱控-最新优惠</h3>
     </div>
 
-    <div class="mm_search">
-        <input class="search" type="text" placeholder="请输入你想比价的商品">
-        <button class="searchBtn">搜索</button>
-    </div>
+    
 
-    <div class="productlist_title">
-        <!-- 挖个坑 -->
-
-    </div>
-
-    <div class="productlist_content">
+    <div class="moneyctrl_content">
         <ul>
             <!-- 挖个坑 -->
         </ul>
     </div>
    
+
+
     <!-- 分页 功能 -->
     <div class="pagination">
         <div class="prev fl">上一页</div>
@@ -46,7 +41,6 @@
                 <span></span>
                 <ul class="hide">
                     <!-- 挖个坑 -->
-                    
                 </ul>
             </div>
         </div>
@@ -71,29 +65,22 @@
 
 </div>
 
-<script type="text/html" id="titleTpl">
-    {{ each result v i }}
-    <a href="index.html">首页</a>><a href="category.html">全部分类</a>><a href="productlist.html">{{v.category}}</a>>
-    <button class="fr">筛选</button>
-    {{ /each }}
-</script>
-
 
 <script type="text/html" id="listTpl">
     {{ each result v i }}
     <li>
-        <a href="product.html?productid={{v.productId}}">
+        <a href="moneyctrlproduct.html?productid={{v.productId}}">
             <div class="pic fl">
-                {{@v.productImg}}
+                {{@v.productImg2}}
             </div>
             <div class="info fl">
                 <div class="title">
-                    <p class="txt-cut-2">{{v.productName}}</p>
-                    <span>{{v.productPrice}}</span>
+                    <span class="name">{{v.productName}}</span>
+                    <span>{{v.productPinkage}}</span>
                 </div>
                 <div class="other">
-                    <span class="mall">{{v.productQuote}}</span>
-                    <span class="comment">{{v.productCom}}</span>
+                    <span class="mall fl">{{v.productFrom}} | {{v.productTime}}</span>
+                    <span class="comment fr"><i class="res">{{v.productComCount}}</i><i class="num"></i></span>
                 </div>
             </div>
         </a>
@@ -102,10 +89,11 @@
 </script>
 
 
+
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/mui/js/mui.js"></script>
 <script src="./lib/Template/template-web.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/productlist.js"></script>
+<script src="./js/moneyctrl.js"></script>
 </body>
 </html>
