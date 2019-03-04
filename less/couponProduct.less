@@ -1,0 +1,60 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.mm_header{
+    background-color: #f4483e;
+    h3{
+        font-size: 46/@base;
+        text-align: center;
+        line-height: 95/@base;
+        color: #fffdff;
+    }
+}
+
+
+.couponProduct_content{
+    ul li{
+        width: 100%;
+        // height: 258/@base;
+        border-bottom: 1px solid #eaeaea;
+        padding-top: 20/@base;
+        padding-bottom: 20/@base;
+        .pic{
+            width: 33%;  //244px
+            height: 166/@base;
+            padding: 0 20/@base;
+            img{
+                width: 200/@base;
+                height: 166/@base;
+            }
+        }
+
+        .info{
+            width: 66%;
+            .title{
+                font-size: 26/@base;
+                line-height: 40/@base;
+                padding-right: 28/@base;
+                .name{
+                    color: #1e0d04;
+                    line-height: 42/@base;
+                }
+                .price{
+                    font-size: 22/@base;
+                    color:#000006;
+                }
+                .time{
+                    font-size: 24/@base;
+                    color:#ea650c;
+                }
+            }
+            
+        }
+    }
+}

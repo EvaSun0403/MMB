@@ -423,43 +423,142 @@ em {
   border-left: 1px solid #b4b4b4;
   border-right: 1px solid #b4b4b4;
 }
-.category_main {
-  border: 1px solid  #d4d4d4;
-  border-radius: 0.06666667rem;
-  margin-bottom: 0.66666667rem;
-}
-.category_main .category_title {
-  height: 1.12rem;
-  line-height: 1.12rem;
-  border-bottom: 1px solid #d4d4d4;
-  background-color: #ededed;
-  padding-left: 0.29333333rem;
-}
-.category_main .category_title h3 {
-  margin-top: 0.29333333rem;
-  font-size: 0.48rem;
-}
-.category_main .category_title i {
-  width: 1.33333333rem;
-  height: 1.12rem;
-  line-height: 1.12rem;
+.mm_header h3 {
+  font-size: 0.61333333rem;
   text-align: center;
-  display: block;
-  font-size: 0.34666667rem;
+  line-height: 1.26666667rem;
+  color: #fffdff;
 }
-.category_main .category_content li {
-  width: 33.3%;
+.baicaijia_title {
+  height: 1.06666667rem;
+  position: relative;
+}
+.baicaijia_title .mui-scroll {
+  height: 1.06666667rem;
+}
+.baicaijia_title ul {
+  height: 1.06666667rem;
+}
+.baicaijia_title ul li {
   height: 1.06666667rem;
   line-height: 1.06666667rem;
-  text-align: center;
-  color: #404040;
-  font-size: 0.34666667rem;
   float: left;
-  border-right: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  padding-right: 0.32rem;
+  padding-left: 0.32rem;
 }
-.category_main .category_content li a {
-  width: 100%;
-  height: 100%;
+.baicaijia_title ul li a {
+  font-size: 0.34666667rem;
+  color: #1c2a4b;
+  height: 1rem;
   display: block;
+  border-bottom: 0.04rem solid transparent;
+}
+.baicaijia_title ul li.current a {
+  color: #e12a2b;
+  border-bottom: 0.04rem solid #e12a2b;
+}
+.baicaijia_content ul li {
+  width: 100%;
+  height: 4.08rem;
+  border-top: 0.10666667rem solid #f7f7f7;
+  padding: 0.26666667rem 0.13333333rem;
+}
+.baicaijia_content ul li .pic {
+  width: 35%;
+}
+.baicaijia_content ul li .pic img {
+  width: 3.46666667rem;
+  height: 3.46666667rem;
+}
+.baicaijia_content ul li .info {
+  width: 64%;
+  padding-left: 0.2rem;
+}
+.baicaijia_content ul li .info .title {
+  padding-right: 0.37333333rem;
+  margin-bottom: 0.26666667rem;
+  font-size: 0.37333333rem;
+  font-weight: 700;
+}
+.baicaijia_content ul li .info .title .b {
+  font-size: 0.34666667rem;
+  line-height: 0.56rem;
+  color: #000103;
+}
+.baicaijia_content ul li .info .title p {
+  margin-top: 0.33333333rem;
+  color: #fc353a;
+  font-size: 0.45333333rem;
+}
+.baicaijia_content ul li .info .title p i {
+  font-size: 0.37333333rem;
+  margin-right: 0.10666667rem;
+}
+.baicaijia_content ul li .info .title p em {
+  font-size: 0.26666667rem;
+  margin-right: 0.10666667rem;
+}
+.baicaijia_content ul li .info .title p del {
+  margin-left: 0.26666667rem;
+  font-size: 0.26666667rem;
+  color: #b6b3b2;
+}
+.baicaijia_content ul li .info .nprogress .box {
+  width: 2.18666667rem;
+  height: 0.37333333rem;
+  border: 0.02666667rem solid #fc3338;
+  background-color: #ffb7b7;
+  border-radius: 0.18666667rem;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.baicaijia_content ul li .info .nprogress .box span {
+  font-size: 0.24rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.baicaijia_content ul li .info .nprogress .box .inner {
+  height: 0.32rem;
+  background-color: #fc3338;
+}
+.baicaijia_content ul li .info .nprogress .bar {
+  float: left;
+  margin-left: 0.26666667rem;
+}
+.baicaijia_content ul li .info .nprogress .bar span {
+  display: none;
+}
+.baicaijia_content ul li .info .nprogress .bar b {
+  font-weight: 400;
+  color: #fc3338;
+}
+.baicaijia_content ul li .info .other {
+  margin-top: 0.33333333rem;
+}
+.baicaijia_content ul li .info .other a {
+  display: block;
+  font-size: 0.29333333rem;
+}
+.baicaijia_content ul li .info .other a:nth-child(1) {
+  float: left;
+  width: 2.88rem;
+  height: 0.72rem;
+  line-height: 0.66666667rem;
+  border: 0.02666667rem dashed #fc3338;
+  color: #fc3338;
+  padding: 0 0.13333333rem;
+}
+.baicaijia_content ul li .info .other a:nth-child(2) {
+  float: right;
+  color: #fff;
+  width: 1.53333333rem;
+  height: 0.72rem;
+  line-height: 0.72rem;
+  text-align: center;
+  background-color: #fc3338;
+  border-radius: 0.06666667rem;
 }

@@ -16,6 +16,12 @@ $(function(){
             $li.on('click',function(){
                 $('.mm_nav li:nth-last-child(-n+4)').toggleClass('now');
             })
+
+            //2.改变 海淘折扣的路径
+            var a = $('.mm_nav a')[4];
+           a.href = 'moneyctrl2.html';
+            
+
         }
     })
 

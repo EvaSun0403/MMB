@@ -423,43 +423,95 @@ em {
   border-left: 1px solid #b4b4b4;
   border-right: 1px solid #b4b4b4;
 }
-.category_main {
-  border: 1px solid  #d4d4d4;
-  border-radius: 0.06666667rem;
-  margin-bottom: 0.66666667rem;
-}
-.category_main .category_title {
-  height: 1.12rem;
-  line-height: 1.12rem;
-  border-bottom: 1px solid #d4d4d4;
-  background-color: #ededed;
-  padding-left: 0.29333333rem;
-}
-.category_main .category_title h3 {
-  margin-top: 0.29333333rem;
-  font-size: 0.48rem;
-}
-.category_main .category_title i {
-  width: 1.33333333rem;
-  height: 1.12rem;
-  line-height: 1.12rem;
+.mm_header h3 {
+  font-size: 0.61333333rem;
   text-align: center;
-  display: block;
-  font-size: 0.34666667rem;
+  line-height: 1.26666667rem;
+  color: #fffdff;
 }
-.category_main .category_content li {
-  width: 33.3%;
-  height: 1.06666667rem;
-  line-height: 1.06666667rem;
+.shopList {
+  position: relative;
+  height: 0.98666667rem;
+  line-height: 0.98666667rem;
+  border-bottom: 0.01333333rem solid #dddddd;
+  margin-bottom: 100px;
+  color: #080300;
+  font-size: 0.4rem;
+}
+.shopList .shop {
+  width: 30%;
   text-align: center;
-  color: #404040;
-  font-size: 0.34666667rem;
-  float: left;
-  border-right: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
 }
-.category_main .category_content li a {
+.shopList .area {
+  width: 30%;
+  text-align: center;
+}
+.shopList .price {
+  width: 30%;
+  text-align: center;
+}
+.shopList .icon {
+  width: 10%;
+  text-align: center;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.53333333rem;
+}
+.shopList span {
+  padding: 0.26666667rem 0.13333333rem;
+}
+.shopList ul {
+  position: absolute;
+  top: 0.98666667rem;
+  left: 0;
   width: 100%;
-  height: 100%;
-  display: block;
+  z-index: 333;
+  list-style: none;
+}
+.shopList ul.hide {
+  display: none;
+}
+.shopList ul li {
+  width: 100%;
+  height: 0.93333333rem;
+  border-bottom: 0.01333333rem solid #dddddd;
+  padding-left: 0.26666667rem;
+  background-color: #fff;
+}
+.gsProduct_content {
+  border: 0.21333333rem solid #f1f1f1;
+}
+.gsProduct_content ul li {
+  width: 50%;
+  height: 6.57333333rem;
+  float: left;
+  border-bottom: 0.21333333rem solid #f1f1f1;
+  border-right: 0.21333333rem solid #f1f1f1;
+}
+.gsProduct_content ul li img {
+  width: 4.53333333rem;
+  height: 4.53333333rem;
+}
+.gsProduct_content ul li .name {
+  font-size: 0.32rem;
+  line-height: 0.50666667rem;
+  color: #250e1e;
+}
+.gsProduct_content ul li .bottom {
+  padding: 0.2rem;
+}
+.gsProduct_content ul li .bottom .price {
+  font-size: 0.37333333rem;
+  color: #ff4f09;
+  line-height: 0.73333333rem;
+}
+.gsProduct_content ul li .bottom button {
+  width: 1.65333333rem;
+  height: 0.74666667rem;
+  line-height: 0.74666667rem;
+  border: none;
+  border-radius: 0.06666667rem;
+  font-size: 0.34666667rem;
+  color: #fff;
+  background-color: #ff9501;
 }

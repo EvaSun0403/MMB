@@ -1,0 +1,167 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.mm_header{
+    h3{
+        font-size: 46/@base;
+        text-align: center;
+        line-height: 95/@base;
+        color: #fffdff;
+    }
+}
+
+.baicaijia_title{
+    height: 80/@base;
+    // overflow: hidden;
+    position: relative;
+    // background-color: pink;
+    .mui-scroll{
+        height: 80/@base;
+    }
+    ul{
+        height: 80/@base;
+        // width: 2000px;
+        li{
+            height: 80/@base;
+            line-height: 80/@base;
+            float: left;
+            padding-right: 24/@base;
+            padding-left: 24/@base;
+            a{
+                font-size: 26/@base;
+                color:#1c2a4b;
+                height: 75/@base;
+                display: block;
+                border-bottom: 3/@base solid transparent;
+            }
+            &.current a{
+                color:#e12a2b;
+                border-bottom: 3/@base solid #e12a2b;
+            }
+        }
+    }
+}
+
+
+
+.baicaijia_content{
+    ul li{
+        width: 100%;
+        height: 306/@base;
+        border-top: 8/@base solid #f7f7f7;
+        padding: 20/@base 10/@base;
+        .pic{
+            width: 35%;  //234px
+            img{
+                width: 260/@base;
+                height: 260/@base;
+            }
+        }
+
+        .info{
+            width: 64%;
+            padding-left: 15/@base;
+            .title{
+                padding-right: 28/@base;
+                margin-bottom: 20/@base;
+                font-size: 28/@base;
+                font-weight: 700;
+                .b{
+                    font-size: 26/@base;
+                    line-height: 42/@base;
+                    color: #000103;
+                }
+                p{
+                    margin-top: 25/@base;
+                    color: #fc353a;
+                    font-size: 34/@base;
+                    i{
+                        font-size: 28/@base;
+                        margin-right: 8/@base;
+                    }
+                    em{
+                        font-size: 20/@base;
+                        margin-right: 8/@base;
+                    }
+                    del{
+                        margin-left: 20/@base;
+                        font-size: 20/@base;
+                        color: #b6b3b2;
+                    }
+                }
+            }
+
+            .nprogress{
+               
+                .box{
+                    width: 164/@base;
+                    height: 28/@base;
+                    border: 2/@base solid #fc3338;
+                    background-color: #ffb7b7;
+                    border-radius: 14/@base;
+                    overflow: hidden;
+                    position: relative;
+                    float: left;
+                    span{
+                        font-size: 18/@base;
+                        color: #fff;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    .inner{
+                        height: 24/@base;
+                        background-color: #fc3338;
+                    }
+                }
+                .bar {
+                    float: left;
+                    margin-left: 20/@base;
+                    span{
+                    display: none;
+                    }
+                    b{
+                        font-weight: 400;
+                        color: #fc3338;
+                    }
+                }
+            }
+
+            .other{
+                margin-top: 25/@base;
+                a{
+                    display: block;
+                    font-size: 22/@base;
+                    &:nth-child(1){
+                        float: left;
+                        width: 216/@base;
+                        height: 54/@base;
+                        line-height: 50/@base;
+                        border:2/@base dashed #fc3338;
+                        color: #fc3338;
+                        padding: 0 10/@base;
+                    }
+                    &:nth-child(2){
+                        float: right;
+                        color: #fff;
+                        width: 115/@base;
+                        height: 54/@base;
+                        line-height: 54/@base;
+                        text-align: center;
+                        background-color: #fc3338;
+                        border-radius: 5/@base;
+                    }
+                }
+              
+            }
+        }
+    }
+}
+

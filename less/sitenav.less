@@ -1,0 +1,43 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.mm_header{
+    h3{
+        font-size: 46/@base;
+        text-align: center;
+        line-height: 95/@base;
+        color: #fffdff;
+    }
+}
+
+.shoplist_content{
+    padding: 30/@base  75/@base 60/@base;
+    ul{
+        li{
+            padding: 28/@base 15/@base;
+            border: 1/@base solid #c0c0c0;
+            height: 86/@base;
+            float: left;
+            margin-right: 15/@base;
+            margin-bottom: 10/@base;
+            img{
+                float: left;
+                width: 32/@base;
+                height: 32/@base;
+                margin-right: 20/@base;
+            }
+            span{
+                float: left;
+                font-size: 32/@base;
+                color:#00000d;
+            }
+        }
+    }
+}
+

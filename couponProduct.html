@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./css/couponProduct.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+<body>
+<div class="mm_container">
+
+    <div class="mm_header">
+        <!-- <img class="fl header_logo" src="./images/header_logo.png" alt=""> -->
+        <a href="#" class="fr">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+        <h3>省钱控-最新优惠</h3>
+    </div>
+
+    
+
+    <div class="couponProduct_content">
+        <ul>
+            <!-- 挖个坑 -->
+        </ul>
+    </div>
+   
+
+
+
+
+    <div class="mm_footer">
+        <div class="footer_top">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><i></i>返回顶部</a>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <a href="#">--掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/html" id="listTpl">
+    {{ each result v i }}
+    <li class="clearfix">
+        <a href="#">
+            <div class="pic fl">
+                {{@v.couponProductImg}}
+            </div>
+            <div class="info fl">
+                <div class="title">
+                    <span class="name">{{v.couponProductName}}</span>
+                    <p class="price">{{v.couponProductPrice}}</p>
+                    <p class="time">{{v.couponProductTime}}</p>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{ /each }}
+</script>
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/Template/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/couponProduct.js"></script>
+</body>
+</html>

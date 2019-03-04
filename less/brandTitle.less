@@ -1,0 +1,65 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.brandtitle{
+    height: 76/@base;
+    line-height: 76/@base;
+    background-color: #f6f6f6;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    padding: 0 15/@base;
+    font-size: 26/@base;
+    a{
+        font-size: 26/@base;
+        color: #060000;
+    }
+}
+
+.brandTitle_nav{
+    margin: 20/@base 10/@base;
+    width: 726/@base;
+    height: 80/@base;
+    line-height: 80/@base;
+    padding-left: 20/@base;
+    border: 1/@base solid #cecece;
+    background-color: #eeeeee;
+    font-size: 30/@base;
+    color: #985c1f;
+}
+
+
+.brandTitle_main{
+    border: 1px solid  #d4d4d4;
+    border-radius: 5/@base;
+    margin-bottom: 50/@base;
+    .category_title {
+        height: 84/@base;
+        line-height: 84/@base;
+        border-bottom: 1px solid #d4d4d4;
+        background-color: #ededed;
+        padding-left: 22/@base ;
+        a{
+            display: block;
+            width: 100%;
+            height: 83/@base;
+            h3{
+                margin-top: 22/@base;
+                font-size: 36/@base;
+            }
+            i{
+                width: 100/@base;
+                height: 84/@base;
+                line-height: 84/@base;
+                text-align: center;
+                display: block;
+                font-size: 26/@base;
+            }
+        }
+    }
+}
