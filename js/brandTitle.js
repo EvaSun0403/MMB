@@ -1,4 +1,7 @@
 $(function(){
+    var brandtitleid = getKey('brandtitleid');
+
+    //渲染十大品牌
     $.ajax({
         url:'http://127.0.0.1:9090/api/getbrandtitle',
         dataType:'json',
@@ -8,6 +11,9 @@ $(function(){
             $('.brandTitle_main').html(htmlStr);
         }
     })
+
+    
+
 
 
 })

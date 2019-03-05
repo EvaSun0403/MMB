@@ -255,11 +255,9 @@ em {
 /* 头部 搜索框 复用  */
 .mm_container {
   width: 100%;
-  height: 4000px;
   margin: 0 auto;
   padding-top: 1.30666667rem;
   background-color: #fff;
-  padding-bottom: 2.56rem;
 }
 .mm_header {
   width: 100%;
@@ -434,7 +432,6 @@ em {
   height: 0.98666667rem;
   line-height: 0.98666667rem;
   border-bottom: 0.01333333rem solid #dddddd;
-  margin-bottom: 100px;
   color: #080300;
   font-size: 0.4rem;
 }

@@ -1,0 +1,225 @@
+/* 完成对所有浏览器的样式统一 */
+@import './normalize.less';
+
+/* 对其他样式做的重置处理 */
+@import './base.less';
+
+/* 公共样式 */
+@import './common.less';
+
+.brand_title{
+    height: 76/@base;
+    line-height: 76/@base;
+    background-color: #f6f6f6;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    padding: 0 15/@base;
+    font-size: 26/@base;
+    a{
+        font-size: 26/@base;
+        color: #060000;
+    }
+}
+
+.brandTitle_nav{
+    margin: 20/@base 10/@base;
+    width: 726/@base;
+    height: 80/@base;
+    line-height: 80/@base;
+    padding-left: 20/@base;
+    border: 1/@base solid #cecece;
+    background-color: #eeeeee;
+    font-size: 30/@base;
+    color: #985c1f;
+}
+
+
+.brand_main{
+    // margin-bottom: 50/@base;
+    .item {
+        // height: 130/@base;
+        border-bottom: 1px solid #d4d4d4;
+        background-color: #ffffff;
+        padding-left: 82/@base ;
+        position: relative;
+        padding-top: 26/@base;
+        &:nth-child(1) .num{
+            background-color: #f10e0e;
+        }
+        &:nth-child(2) .num{
+            background-color: #ff9314;
+        }
+        &:nth-child(3) .num{
+            background-color: #8adf5b;
+        }
+        .num{
+           position: absolute;
+           top: 21/@base;
+           left: 23/@base;
+            width: 42/@base;
+            height: 42/@base;
+            line-height: 42/@base;
+            text-align: center;
+            background-color: #c9c9c9;
+            color: #fff;
+
+        }
+        a{
+            display: block;
+            width: 100%;
+            height: 130/@base;
+            h3{
+                font-size: 31/@base;
+                margin-bottom: 20/@base;
+                font-weight: 400;
+            }
+            p{
+                font-size: 25/@base;
+                color: #9a938d;
+            }
+            i{
+                width: 100/@base;
+                height: 84/@base;
+                line-height: 84/@base;
+                text-align: center;
+                display: block;
+                font-size: 35/@base;
+                color: #8da0a0;
+            }
+        }
+    }
+}
+
+
+.salesVolume{
+    .top{
+        height: 74/@base;
+        background-color: #f3f3f3;
+        border-top: 2/@base solid #cecece;
+        border-bottom: 2/@base solid #cecece;
+        padding-left: 20/@base;
+        h3{
+            line-height: 74/@base;
+            color:#700e1d;
+            font-size: 24/@base;
+        }
+    }
+    .content{
+        ul li{
+            width: 100%;
+            height: 235/@base;
+            border-bottom: 1px solid #e9e9e9;
+            padding-right: 50/@base;
+            .pic{
+                width: 31%;  //234px
+                height: 235/@base;
+                padding: 40/@base 16/@base;
+                img{
+                    width: 186/@base;
+                    height: 142/@base;
+                }
+            }
+    
+            .info{
+                width: 69%;
+                .title{
+                    margin-top: 20/@base;
+                    padding-right: 28/@base;
+                    height: 156/@base;
+                    p{
+                        color: #251e28;
+                        font-size: 26/@base;
+                        line-height: 45/@base;
+                    }
+                    span{
+                        font-size: 30/@base;
+                        color: #e50500;
+                    }
+                }
+                .other{
+                    font-size: 22/@base;
+                    color: #a8a9a9;
+                    padding-right: 16/@base;
+                    
+                }
+            }
+        }
+
+    }
+}
+
+
+.comment{
+    .top{
+        // height: 74/@base;
+        background-color: #f3f3f3;
+        border-top: 2/@base solid #cecece;
+        border-bottom: 2/@base solid #cecece;
+        padding-left: 20/@base;
+        h3{
+            line-height: 74/@base;
+            color:#700e1d;
+            font-size: 24/@base;
+        }
+    }
+
+    .content{
+        ul li{
+            width: 100%;
+            // height: 235/@base;
+            // border-bottom: 1px solid #e9e9e9;
+            padding: 0  22/@base;
+            .title{
+                height: 240/@base;
+                padding-top: 30/@base;
+                // padding: 40/@base 16/@base;
+                img{
+                    float: left;
+                    width: 30%;  //234px
+                   
+                    margin-right: 40/@base;
+                }
+                p{
+                    float: left;
+                    width: 60%;
+                    font-size: 24/@base;
+                    line-height: 45/@base;
+                }
+            }
+    
+            .info{
+               border: 1/@base solid #e8e8e8;
+               padding: 30/@base 20/@base;
+               background-color: #f8f8f8;
+               position: relative;
+               .box{
+                   width: 40/@base;
+                   height: 40/@base;
+                   position: absolute;
+                   top: -40px;
+                   left: 50px;
+                   border-bottom: 20/@base solid #f8f8f8;
+                   border-left: 20/@base solid transparent;
+                   border-right: 20/@base solid transparent;
+                   border-top: 20/@base solid transparent;
+               }
+               .text{
+                   height: 55/@base;
+                   font-size: 24/@base;
+                   .user{
+                       color: #213b00;
+                   }
+                   .time{
+                       color:#949aa8;
+                   }
+               }
+               p{
+                   font-size: 30/@base;
+                   color: #040201;
+                   line-height: 45/@base;
+               }
+            }
+        }
+
+    }
+}

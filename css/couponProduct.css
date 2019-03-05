@@ -255,11 +255,9 @@ em {
 /* 头部 搜索框 复用  */
 .mm_container {
   width: 100%;
-  height: 4000px;
   margin: 0 auto;
   padding-top: 1.30666667rem;
   background-color: #fff;
-  padding-bottom: 2.56rem;
 }
 .mm_header {
   width: 100%;
@@ -466,4 +464,23 @@ em {
 .couponProduct_content ul li .info .title .time {
   font-size: 0.32rem;
   color: #ea650c;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal .swiper-container {
+  width: 4rem;
+  height: 2.66666667rem;
+  background-color: orange;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
