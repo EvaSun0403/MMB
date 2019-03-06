@@ -10,7 +10,7 @@ $(function () {
             var htmlStr = template('titleTpl', info);
             $('.baicaijia_title ul').html(htmlStr);
 
-            
+
             //5.点击标题时，
             var ul = document.querySelector('.baicaijia_title ul');
             var lis = ul.querySelectorAll('li');
@@ -67,12 +67,15 @@ $(function () {
                     $(this).find('.num').text(per);
                     $(this).find('.inner').width(per);
 
+                    // 初始化区域滚动
+                    var myScroll = new IScroll('#wrapper');
+
                 })
             }
         })
     }
 
-    
+
 
 
 

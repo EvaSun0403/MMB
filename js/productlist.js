@@ -55,6 +55,7 @@ $(function(){
                 $('.pagination ul').html(str);
 
              
+                var myScroll = new IScroll('#wrapper');
             }
         })
     }

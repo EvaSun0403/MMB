@@ -1,6 +1,7 @@
 
     function getKey(key){
         var str = location.search;
+        str = decodeURI(str);
         str = str.slice(1);
         // console.log(str);
         var arr = str.split('&');
@@ -14,7 +15,11 @@
     }
 
 
-    //初始化 区域滚动
-    mui('.mui-scroll-wrapper').scroll({
-        deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-    });
+    // //初始化 区域滚动
+    // mui('.mui-scroll-wrapper').scroll({
+    //     deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    // });
+
+
+    // 初始化区域滚动
+    var myScroll = new IScroll('#wrapper');

@@ -252,12 +252,26 @@ em {
   font-style: normal;
 }
 /* 公共样式 */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.mm_container {
+  width: 100%;
+  height: 100%;
+}
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
 /* 头部 搜索框 复用  */
 .mm_container {
   width: 100%;
   margin: 0 auto;
   padding-top: 1.30666667rem;
   background-color: #fff;
+  position: relative;
 }
 .mm_header {
   width: 100%;
@@ -278,6 +292,12 @@ em {
   width: 0.90666667rem;
   height: 0.90666667rem;
   margin-top: 0.18666667rem;
+}
+.mm_header i {
+  line-height: 1.30666667rem;
+  font-size: 0.66666667rem;
+  color: #fff;
+  float: left;
 }
 .mm_search {
   width: 100%;
@@ -306,9 +326,7 @@ em {
 /* 底部复用 */
 .mm_footer {
   width: 100%;
-  height: 2.56rem;
   background-color: #f1f1f1;
-  bottom: 0;
 }
 .mm_footer .footer_top {
   height: 0.90666667rem;
@@ -483,4 +501,12 @@ em {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.modal .del {
+  color: #fff;
+  font-size: 0.66666667rem;
+  font-weight: 700;
+  position: absolute;
+  top: 26%;
+  right: 25%;
 }

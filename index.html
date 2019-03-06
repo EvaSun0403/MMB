@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>慢慢买</title>
     <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./lib/flexible/flexible.js"></script>
 </head>
@@ -14,18 +15,17 @@
 <body>
     <div class="mm_container">
 
-        <div class="mm_header">
+        <div class="mm_header" >
             <img class="fl header_logo" src="./images/header_logo.png" alt="">
             <a href="#" class="fr">
                 <img class="header_app" src="./images/header_app.png" alt="">
             </a>
         </div>
 
-        <div class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-                <!--这里放置真实显示的DOM内容-->
+        <div id="wrapper">
+            <div class="mmb_main">
 
-                <div class="mm_search">
+                <div class="mm_search" id="search">
                     <input class="search" type="text" placeholder="请输入你想比价的商品">
                     <button class="searchBtn">搜索</button>
                 </div>
@@ -59,7 +59,7 @@
                     <div class="footer_top">
                         <a href="#">登录</a>
                         <a href="#">注册</a>
-                        <a href="#"><i></i>返回顶部</a>
+                        <a href="#search" ><i></i>返回顶部</a>
 
                     </div>
                     <div class="footer">
@@ -73,7 +73,9 @@
                 </div>
 
             </div>
+
         </div>
+
 
     </div>
 
@@ -112,6 +114,8 @@
 </script>
 
     <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/IScroll/iscroll.js"></script>
     <script src="./lib/Template/template-web.js"></script>
     <script src="./js/index.js"></script>
 </body>

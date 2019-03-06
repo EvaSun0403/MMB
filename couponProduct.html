@@ -17,16 +17,15 @@
     <div class="mm_container">
 
         <div class="mm_header">
-            <!-- <img class="fl header_logo" src="./images/header_logo.png" alt=""> -->
+            <i class="mui-icon mui-icon-arrowleft" onclick="javascript:history.back(-1);"></i>
             <a href="#" class="fr">
                 <img class="header_app" src="./images/header_app.png" alt="">
             </a>
             <h3>省钱控-最新优惠</h3>
         </div>
 
-        <div class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-                <!--这里放置真实显示的DOM内容-->
+        <div id="wrapper">
+            <div class="mmb_main">
 
                 <div class="couponProduct_content">
                     <ul>
@@ -64,11 +63,12 @@
                 <div class="swiper-slide"><img src="" alt=""></div>
                 <div class="swiper-slide"><img src="" alt=""></div>
             </div>
-
-            <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- 关闭按钮 -->
+        <div class="del mui-icon mui-icon-closeempty"></div>
 
     </div>
 
@@ -97,6 +97,7 @@
 
 
     <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/IScroll/iscroll.js"></script>
     <script src="./lib/swiper/js/swiper.min.js"></script>
     <script src="./lib/mui/js/mui.js"></script>
     <script src="./lib/Template/template-web.js"></script>

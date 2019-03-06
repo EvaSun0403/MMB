@@ -22,6 +22,9 @@
             </a>
         </div>
 
+        <div id="wrapper">
+            <div class="mmb_main">
+
                 <div class="mm_search">
                     <input class="search" type="text" placeholder="请输入你想比价的商品">
                     <button class="searchBtn">搜索</button>
@@ -31,17 +34,18 @@
                     <a href="index.html">首页</a>><a href="brandTitle.html">全部分类</a>>
                 </div>
 
-                <div class="brandTitle_nav">平板电视哪个牌子好</div>
+                <!-- 这个标题要从上一个页面传递过来 -->
+                <div class="brandTitle_nav"><span></span>哪个牌子好</div>
 
-                <!-- 平板电视十大品牌 -->
+                <!-- XX十大品牌 -->
                 <div class="brand_main">
                     <!-- 挖个坑 -->
                 </div>
 
                 <!-- 平板电视销量排行 -->
-                <div class="salesVolume">
+                <div class="salesVolume hide" id="sales">
                     <div class="top">
-                        <h3>平板电视销量排行</h3>
+                        <h3><span></span>销量排行</h3>
                     </div>
                     <div class="content">
                         <ul>
@@ -52,9 +56,9 @@
 
 
                 <!-- 评论列表 -->
-                <div class="comment">
+                <div class="comment hide" id="comment">
                     <div class="top">
-                        <h3>平板电视最新评论</h3>
+                        <h3><span></span>最新评论</h3>
                     </div>
                     <div class="content">
                         <ul>
@@ -80,15 +84,17 @@
                         <p>m.manmanbuy.com</p>
                     </div>
                 </div>
-           
+            </div>
+        </div>
+
     </div>
 
     <script type="text/html" id="brandTpl">
     {{ each result v i }}
-    <div class="item clearfix">
+    <div class="item clearfix"  data-id="{{v.brandTitleId}}" data-title="{{v.brandName}}" >
        <div class="num">{{i+1}}</div>  
-       <a href="brand.html?productid={{v.productId}}">
-           <i class="mui-icon mui-icon-forward fr" data-id="{{v.brandTitleId}}"></i>
+       <a href="#sales">
+           <i class="mui-icon mui-icon-forward fr"></i>
             <h3>{{v.brandName}}</h3>
             <p>{{v.brandInfo}}</p>
        </a>
@@ -98,8 +104,8 @@
 
     <script type="text/html" id="salesTpl">
     {{ each result v i }}
-    <li>
-        <a href="product.html?productid={{v.productId}}">
+    <li data-name="{{v.productName}}" data-id="{{v.productId}}" >
+        <a href="#comment" >
             <div class="pic fl">
                 {{@v.productImg}}
             </div>
@@ -120,8 +126,8 @@
 
     <script type="text/html" id="commentTpl">
     {{ each result v i }}
-    <li>
-        <a href="product.html?productid={{v.productId}}">
+    <li data-name="{{v.comName}}">
+        <a href="#comment">
             <div class="title">
                 <img src="" alt="">
                 <p class="txt-cut-2 name"></p>
@@ -146,6 +152,7 @@
 
 
     <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/IScroll/iscroll.js"></script>
     <script src="./lib/mui/js/mui.js"></script>
     <script src="./lib/Template/template-web.js"></script>
     <script src="./js/common.js"></script>

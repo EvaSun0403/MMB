@@ -35,6 +35,7 @@ $(function(){
             var htmlStr = template('evaluateTpl',info);
             $('.evaluate .content').html(htmlStr);
             
+            var myScroll = new IScroll('#wrapper');
         }
 
     })
